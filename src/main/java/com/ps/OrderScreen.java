@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class OrderScreen {
     private Scanner scanner = new Scanner(System.in);
-    private Order currentOrder = new Order();
 
     public void showOptions() {
         while (true) {

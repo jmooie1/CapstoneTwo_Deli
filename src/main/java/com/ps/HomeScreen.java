@@ -14,8 +14,8 @@ public class HomeScreen {
             int userChoice = scanner.nextInt();
 
             if(userChoice == 1) {
-                OrderScreen orderSCreen = new OrderScreen();
-                orderSCreen.showOptions();
+                OrderScreen orderScreen = new OrderScreen();
+                orderScreen.showOptions();
             } else if (userChoice == 0) {
                 System.out.println("Exits the application.");
                 break;
