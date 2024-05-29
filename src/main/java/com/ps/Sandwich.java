@@ -3,8 +3,7 @@ package com.ps;
 import java.util.ArrayList;
 import java.util.List;
 
-// Inherits from Product.
-public class Sandwich extends Product {
+public class Sandwich extends Product{
     private String size;
     private String breadType;
     private List<Topping> toppings;
@@ -34,12 +33,17 @@ public class Sandwich extends Product {
         return breadType;
     }
 
-    public List<Topping> getToppings(){
+    public List<Topping> getToppings() {
         return toppings;
     }
 
     public boolean isToasted() {
         return isToasted;
     }
-
 }
+
+
+
+
+
+

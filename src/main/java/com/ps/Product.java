@@ -1,8 +1,5 @@
 package com.ps;
 
-
-// Base class for Sandwich
-
 public class Product {
     private String name;
     private double price;
@@ -20,5 +17,3 @@ public class Product {
         return price;
     }
 }
-
-
