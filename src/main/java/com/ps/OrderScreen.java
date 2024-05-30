@@ -49,7 +49,7 @@ public class OrderScreen {
                     System.out.println("Invalid. Please try again.");
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Invalid. Enter an actual number.");
+                System.out.println("Invalid. Enter an number (0-4).");
                 scanner.next(); // Clears the invalid input.
             }
         }
