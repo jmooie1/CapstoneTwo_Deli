@@ -17,7 +17,7 @@ import java.util.Locale;
 public class OrderScreen {
     private final Scanner scanner = new Scanner(System.in);
     private final Order currentOrder = new Order(); // The current order being processed.
-    private NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(Locale.US);
+    private final NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(Locale.US);
 
     // Main method to display options all the options and to navigate through the menu.
     public void showOptions() {
@@ -292,7 +292,7 @@ public class OrderScreen {
 
             // Creates chips object with the selected type.
             Product chips = new Product(chipType, 1.50);
-            // This add chips to the current order.
+            // This adds chips to the current order.
             currentOrder.addOtherItem(chips);
             System.out.println("Chips added to your order.");
         } catch (InputMismatchException e) {
@@ -336,7 +336,7 @@ public class OrderScreen {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd-HHmmss");
         String dateTime = dateFormat.format(new Date());
 
-        File receiptFile = new File("reciepts" + dateTime+ ".txt");
+        File receiptFile = new File("receipts" + dateTime+ ".txt");
         FileWriter fw = new FileWriter(receiptFile);
         BufferedWriter bw = new BufferedWriter(fw);
             // This writes the order details to the file.
