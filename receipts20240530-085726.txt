@@ -1,0 +1,12 @@
+Order Details:Sandwich: Custom Sandwich
+Size: 8"
+Bread: Wheat
+Toppings:
+ - Salami
+ - Ham
+ - Extra Ham
+ - Cheddar
+ - Tomatoes
+ - Ranch
+Toasted: Yes
+Total Cost: $13.5

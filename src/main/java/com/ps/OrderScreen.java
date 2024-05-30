@@ -136,20 +136,12 @@ public class OrderScreen {
         while (true) {
             try {
                 for (int i = 0; i < options.length; i++) {
-                    double toppingPrice = 0.0;
-                    double extraToppingPrice = 0.0;
                     switch(sandwich.getSize()) { // This determines the price based on the sandwich size.
                         case "4\"":
-                            toppingPrice = priceOf4Inch;
-                            extraToppingPrice = extraPrice4Inch;
                             break;
                         case "8\"":
-                            toppingPrice = priceOf8Inch;
-                            extraToppingPrice = extraPrice8Inch;
                             break;
                         case "12\"":
-                            toppingPrice = priceOf12Inch;
-                            extraToppingPrice = priceOf12Inch;
                             break;
                     }
                     // This displays the options with the prices.
@@ -312,7 +304,8 @@ public class OrderScreen {
                 // Saves the receipt and returns to home screen
                 System.out.println("Order confirmed. Saving receipt...");
                 // Generate and save receipt
-                System.out.println("Receipt saved.");
+                saveReceipt();
+                System.out.println("What's next? Add a new order or exit out the application.");
             } else if (choice == 2) {
                 System.out.println("Order canceled. Returning to home screen.");
             } else {
@@ -343,7 +336,7 @@ public class OrderScreen {
             bw.write(currentOrder.getOrderDetailsOfSandwich());
             // And this closes it.
             bw.close();
-            System.out.println("Order confirmed. The receipt has been saved.");
+            System.out.println("Alright. The receipt has been saved.");
         } catch(IOException e) {
             System.out.println("There has been an error saving the receipt" + e.getMessage());
         }

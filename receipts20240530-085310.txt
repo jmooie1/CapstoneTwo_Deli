@@ -1,0 +1,12 @@
+Order Details:Sandwich: Custom Sandwich
+Size: 8"
+Bread: White
+Toppings:
+ - Ham
+ - Cheddar
+ - Onions
+ - Peppers
+ - Lettuce
+ - Ranch
+Toasted: No
+Total Cost: $10.5
